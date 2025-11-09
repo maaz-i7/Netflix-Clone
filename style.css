@@ -126,6 +126,10 @@
     .plusSvg {
         transform: scale(0.7) !important;
     }
+
+    .Netflix, .bot {
+        font-size: 10px !important;
+    }
 }
 
 * {

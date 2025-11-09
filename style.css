@@ -25,6 +25,100 @@
     font-display: swap;
 }
 
+@media only screen and (min-width: 901px) and (max-width: 1400px) {
+
+    .tagLine {
+        font-size: 45px !important;
+        width: 45vw !important;
+    }
+
+    .cost {
+        font-size: 18px !important;
+    }
+
+    .startText {
+        font-size: 15px !important;
+    }
+
+    .signin,
+    .logo,
+    .Language {
+        transform: scale(0.95) !important;
+    }
+
+    .reasonText {
+        font-size: 13px !important;
+    }
+
+    .reasonHead {
+        font-size: 18px !important;
+    }
+
+    .reasonsSvgs {
+        transform: scale(0.8) !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tagLine {
+        font-size: 35px !important;
+        width: 75vw !important;
+    }
+
+    .cost {
+        font-size: 15px !important;
+        width: 75vw !important;
+    }
+
+    .startText {
+        font-size: 13px !important;
+        width: 75vw !important;
+    }
+
+    .signin,
+    .logo,
+    .Language {
+        transform: scale(0.8) !important;
+    }
+
+    .emailBox,
+    .lastEmailBox {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .emailInputBox,
+    .getStarted {
+        transform: scale(0.8) !important;
+    }
+
+    .reasonsBoxes {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasons {
+        width: 80vw !important;
+    }
+    
+    .ques, .ans {
+        font-size: 20px !important;
+    }
+
+    .lastDivText {
+        font-size: 15px !important;
+        text-align: center !important;
+    }
+
+    .links, .contactNum {
+        font-size: 10px !important;
+    }
+}
+
 * {
 
     margin: 0;
@@ -162,7 +256,8 @@ option {
     margin-top: 35px;
 }
 
-.emailBox, .lastEmailBox {
+.emailBox,
+.lastEmailBox {
 
     margin-top: 20px;
     display: flex;
@@ -332,7 +427,7 @@ input {
 
 .reasonText {
 
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-weight: 500;
     font-size: 17px;
     margin-top: 20px;
@@ -345,7 +440,7 @@ input {
     padding: 14px;
     width: 50%;
     height: 250px;
-    background: linear-gradient( 149deg, #192247 0%, #210e17 96.86% );
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -366,13 +461,13 @@ input {
 }
 
 .reasonsSvgs {
-    
+
     align-self: flex-end;
     margin-top: auto;
 }
 
 .faqDiv {
-    
+
     width: 81vw;
     margin: auto;
     display: flex;
@@ -429,7 +524,7 @@ input {
 }
 
 @keyframes dropDown {
-    
+
     from {
 
         height: 0px;
@@ -444,7 +539,7 @@ input {
 }
 
 @keyframes pullUp {
-    
+
     from {
 
         height: auto;
@@ -459,7 +554,7 @@ input {
 }
 
 .ans {
-    
+
     height: 0;
     margin-top: -54px;
     overflow: hidden;
@@ -474,7 +569,9 @@ input {
     z-index: -1;
 }
 
-.ans12, .ans32, .ans62 {
+.ans12,
+.ans32,
+.ans62 {
 
     margin-top: 35px;
 }
@@ -513,14 +610,14 @@ footer {
 
     font-family: "Netflix Sans Variable", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
     font-weight: 400;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .number {
 
     font-family: "Netflix Sans Variable", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
     font-weight: 400;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     margin-left: 6px;
 }
 
@@ -534,22 +631,33 @@ footer {
     margin-top: 50px;
 }
 
-.item11, .item12, .item13, .item14 {
+.item11,
+.item12,
+.item13,
+.item14 {
 
     grid-row: 1/2;
 }
 
-.item21, .item22, .item23, .item24 {
+.item21,
+.item22,
+.item23,
+.item24 {
 
     grid-row: 2/3;
 }
 
-.item31, .item32, .item33, .item34 {
+.item31,
+.item32,
+.item33,
+.item34 {
 
     grid-row: 3/4;
 }
 
-.item41, .item42, .item43 {
+.item41,
+.item42,
+.item43 {
 
     grid-row: 4/5;
 }
@@ -558,7 +666,7 @@ footer {
 
     font-family: "Netflix Sans Variable", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
     font-weight: 400;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 15px;
 }
 
@@ -569,10 +677,10 @@ footer {
 }
 
 .Netflix {
- 
+
     font-family: "Netflix Sans Variable", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
     font-weight: 400;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 15px;
     margin-top: 40px;
 }
@@ -581,7 +689,7 @@ footer {
 
     font-family: "Netflix Sans Variable", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
     font-weight: 400;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     margin-top: 40px;
     margin-bottom: 150px;

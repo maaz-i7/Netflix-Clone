@@ -1,1 +1,1 @@
-Check out it here - https://netflix-clone-p3duc6ie5-maazs-projects-77d0201f.vercel.app/
+Check it out here - https://netflix-clone-by-maaz.vercel.app/

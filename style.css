@@ -91,12 +91,12 @@
 
     .emailInputBox,
     .getStarted {
-        transform: scale(0.7) !important;
+        transform: scale(0.8) !important;
     }
 
     #lastEmailBox {
         width: 80vw !important;
-        transform: scale(0.7) !important;
+        transform: scale(0.8) !important;
     }
 
     .reasonsBoxes {
@@ -124,7 +124,7 @@
     }
 
     .plusSvg {
-        transform: scale(0.7) !important;
+        width: 20px !important;
     }
 
     .Netflix, .bot {
@@ -534,6 +534,7 @@ input {
 .plusSvg {
 
     margin-left: auto;
+    width: 35px;
 }
 
 @keyframes dropDown {

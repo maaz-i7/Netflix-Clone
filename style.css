@@ -91,7 +91,12 @@
 
     .emailInputBox,
     .getStarted {
-        transform: scale(0.8) !important;
+        transform: scale(0.7) !important;
+    }
+
+    #lastEmailBox {
+        width: 80vw !important;
+        transform: scale(0.7) !important;
     }
 
     .reasonsBoxes {
@@ -114,8 +119,12 @@
         text-align: center !important;
     }
 
-    .links, .contactNum {
+    .links, .contactNum, .linkText {
         font-size: 10px !important;
+    }
+
+    .plusSvg {
+        transform: scale(0.7) !important;
     }
 }
 

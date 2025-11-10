@@ -135,6 +135,14 @@
         transform: scale(0.8) !important;
         width: 90vw !important;
     }
+
+    .bot {
+        flex-direction: column !important;
+    } 
+
+    .Learn {
+        margin-left: 0 !important;
+    }
 }
 
 * {
@@ -708,9 +716,32 @@ footer {
 
     font-family: "Netflix Sans Variable", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    display: flex;
     margin-top: 40px;
-    margin-bottom: 150px;
+    margin-bottom: 10px;
 }
 
+.Learn {
+
+    text-decoration: underline;
+    margin-left: 5px;
+    cursor: pointer;
+    color: rgb(68,142,244);
+}
+
+.hidden {
+    
+    visibility: hidden;
+    font-family: "Netflix Sans Variable", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 100px;
+}
+
+.footerLinks {
+
+    color: white;
+}

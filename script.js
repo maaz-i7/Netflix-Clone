@@ -21,3 +21,11 @@ for(let i = 1; i <= 6; i++) {
         }
     });
 }
+
+const learnMore = document.querySelector('.Learn');
+
+learnMore.addEventListener('click', () => {
+        
+    learnMore.style.visibility = 'hidden';
+    document.querySelector('.hidden').style.visibility = 'visible';
+});

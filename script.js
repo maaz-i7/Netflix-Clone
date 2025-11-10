@@ -1,23 +1,33 @@
 let isDropped = [false, false, false, false, false, false];
 
-for(let i = 1; i <= 6; i++) {
+for (let i = 1; i <= 6; i++) {
 
     let questDiv = document.querySelector(`.quest${i}`);
 
     questDiv.addEventListener('click', () => {
 
-        if(isDropped[i-1] === true) {
+        if (isDropped[i - 1] === true) {
 
             document.querySelector(`.ans${i}`).style.animation = 'pullUp 200ms ease-out 0ms forwards';
             document.querySelector(`.quest${i} > svg`).style = 'transform: rotate(0deg)';
-            isDropped[i-1] = false;
+            isDropped[i - 1] = false;
         }
 
         else {
 
+            for (let j = 1; j <= 6; j++) {
+
+                if (isDropped[j - 1] === true) {
+
+                    document.querySelector(`.ans${j}`).style.animation = 'pullUp 200ms ease-out 0ms forwards';
+                    document.querySelector(`.quest${j} > svg`).style = 'transform: rotate(0deg)';
+                    isDropped[j - 1] = false;
+                }
+            }
+
             document.querySelector(`.ans${i}`).style.animation = 'dropDown 200ms ease-out 0ms forwards';
             document.querySelector(`.quest${i} > svg`).style = 'transform: rotate(45deg)';
-            isDropped[i-1] = true;
+            isDropped[i - 1] = true;
         }
     });
 }
@@ -25,7 +35,7 @@ for(let i = 1; i <= 6; i++) {
 const learnMore = document.querySelector('.Learn');
 
 learnMore.addEventListener('click', () => {
-        
+
     learnMore.style.visibility = 'hidden';
     document.querySelector('.hidden').style.visibility = 'visible';
 });
